@@ -19,7 +19,7 @@ After this, you will want to `git clone` the repository locally and then use `gi
 An example of the commands would be (On MAC)
 
 ```
-git grep -l 'YOURPACKAGE' | xargs sed -i '' -e 's/YOURPACKAGE/mypackage/g'
+git grep -l 'pyblast' | xargs sed -i '' -e 's/pyblast/mypackage/g'
 git grep -l 'YOUR NAME' | xargs sed -i '' -e 's/YOUR NAME/myname/g'
 git grep -l 'YOUREMAIL' | xargs sed -i '' -e 's/YOUREMAIL/myemail/g'
 ```
@@ -27,7 +27,7 @@ git grep -l 'YOUREMAIL' | xargs sed -i '' -e 's/YOUREMAIL/myemail/g'
 After you have done this, you must also change the name of the package in the repo using `git mv`
 
 ```
-git mv YOURPACKAGE/ mypackage
+git mv pyblast/ mypackage
 ```
 
 Now we can commit and update the template so we are ready for developing your own package.

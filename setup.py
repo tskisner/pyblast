@@ -2,22 +2,22 @@
 # -*- coding: utf-8 -*-
 # Copyright (C) YOURNAME (2019)
 #
-# This file is part of the YOURPACKAGE python package.
+# This file is part of the pyblast python package.
 #
-# YOURPACKAGE is free software: you can redistribute it and/or modify
+# pyblast is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
 # the Free Software Foundation, either version 3 of the License, or
 # (at your option) any later version.
 #
-# YOURPACKAGE is distributed in the hope that it will be useful,
+# pyblast is distributed in the hope that it will be useful,
 # but WITHOUT ANY WARRANTY; without even the implied warranty of
 # MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 # GNU General Public License for more details.
 #
 # You should have received a copy of the GNU General Public License
-# along with YOURPACKAGE.  If not, see <http://www.gnu.org/licenses/>.
+# along with pyblast.  If not, see <http://www.gnu.org/licenses/>.
 
-"""Setup the YOURPACKAGE package
+"""Setup the pyblast package
 """
 
 from __future__ import print_function
@@ -109,8 +109,8 @@ packagenames = find_packages()
 # Executables go in a folder called bin
 scripts = glob.glob(os.path.join('bin', '*'))
 
-PACKAGENAME = 'YOURPACKAGE'
-DISTNAME = 'YOURPACKAGE' #'YOUR DISTRIBTUION NAME (I.E. PIP INSTALL DISTNAME)' Generally good to be same as packagename
+PACKAGENAME = 'pyblast'
+DISTNAME = 'pyblast' #'YOUR DISTRIBTUION NAME (I.E. PIP INSTALL DISTNAME)' Generally good to be same as packagename
 AUTHOR = 'YOURNAME'
 AUTHOR_EMAIL = 'YOUREMAIL'
 LICENSE = 'GPLv3+'
