@@ -115,7 +115,7 @@ AUTHOR = 'YOURNAME'
 AUTHOR_EMAIL = 'YOUREMAIL'
 LICENSE = 'GPLv3+'
 DESCRIPTION = 'MY DESCRIPTION'
-GITHUBURL = 'https://github.com/CIERA-Northwestern/template.git'
+GITHUBURL = 'https://github.com/CIERA-Northwestern/pyblast.git'
 
 setup(name=DISTNAME,
       provides=[PACKAGENAME],
