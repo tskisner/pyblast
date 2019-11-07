@@ -19,7 +19,7 @@
 """Unit test for pyblast.YOURMODULE classes
 """
 
-from pyblast.mymodule.mymodule import MyModule
+from pyblast.detector.mymodule import MyModule
 
 class TestMyModule(object):
     def test_myclass(self):
