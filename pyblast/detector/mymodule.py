@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Copyright (C) YOUR NAME (2019)
+# Copyright (C) Scott Coughlin (2019)
 #
 # This file is part of pyblast.
 #
@@ -23,7 +23,7 @@
 Place package import here
 """
 
-__author__ = 'YOUR NAME <YOUR EMAIL@gmail.com>'
+__author__ = 'Scott Coughlin <scottcoughlin2014@u.northwestern.edu@gmail.com>'
 __credits__ = 'Scott Coughlin <scottcoughlin2014@u.northwestern.edu>'
 __all__ = ['MyModule']
 

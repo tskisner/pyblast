@@ -22,6 +22,6 @@
 
 from ._version import get_versions
 __version__ = get_versions()['version']
-__author__ = 'YOUR NAME <YOUR EMAIL>'
+__author__ = 'Scott Coughlin <scottcoughlin2014@u.northwestern.edu>'
 __credits__ = ['Scott Coughlin <scottcoughlin2014@u.northwestern.edu>']
 del get_versions

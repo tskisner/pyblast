@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# Copyright (C) YOURNAME (2019)
+# Copyright (C) Scott Coughlin (2019)
 #
 # This file is part of the pyblast python package.
 #
@@ -71,7 +71,7 @@ setup_requires = [
 # are all used in the example below for specifying specific version of the
 # packages that are compatbile with your software.
 install_requires = [
-    #'numpy >= 1.16',
+    'numpy >= 1.16',
     #'scipy >= 0.12.1',
     #'matplotlib >= 1.2.0, != 2.1.0, != 2.1.1',
     #'astropy >= 1.1.1, < 3.0.0 ; python_version < \'3\'',
@@ -109,10 +109,10 @@ packagenames = find_packages()
 # Executables go in a folder called bin
 scripts = glob.glob(os.path.join('bin', '*'))
 
-PACKAGENAME = 'pyblast'
+PACKAGENAME = 'nublast'
 DISTNAME = 'pyblast' #'YOUR DISTRIBTUION NAME (I.E. PIP INSTALL DISTNAME)' Generally good to be same as packagename
-AUTHOR = 'YOURNAME'
-AUTHOR_EMAIL = 'YOUREMAIL'
+AUTHOR = 'Scott Coughlin'
+AUTHOR_EMAIL = 'scottcoughlin2014@u.northwestern.edu'
 LICENSE = 'GPLv3+'
 DESCRIPTION = 'MY DESCRIPTION'
 GITHUBURL = 'https://github.com/CIERA-Northwestern/pyblast.git'
