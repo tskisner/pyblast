@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# Copyright (C) YOUR NAME (2019)
+# Copyright (C) Scott Coughlin (2019)
 #
 # This file is part of pyblast
 #
