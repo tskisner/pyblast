@@ -110,7 +110,7 @@ packagenames = find_packages()
 scripts = glob.glob(os.path.join('bin', '*'))
 
 PACKAGENAME = 'pyblast'
-DISTNAME = 'pyblast' #'YOUR DISTRIBTUION NAME (I.E. PIP INSTALL DISTNAME)' Generally good to be same as packagename
+DISTNAME = 'nublast' #'YOUR DISTRIBTUION NAME (I.E. PIP INSTALL DISTNAME)' Generally good to be same as packagename
 AUTHOR = 'Scott Coughlin'
 AUTHOR_EMAIL = 'scottcoughlin2014@u.northwestern.edu'
 LICENSE = 'GPLv3+'
