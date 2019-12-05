@@ -109,8 +109,8 @@ packagenames = find_packages()
 # Executables go in a folder called bin
 scripts = glob.glob(os.path.join('bin', '*'))
 
-PACKAGENAME = 'nublast'
-DISTNAME = 'pyblast' #'YOUR DISTRIBTUION NAME (I.E. PIP INSTALL DISTNAME)' Generally good to be same as packagename
+PACKAGENAME = 'pyblast'
+DISTNAME = 'nublast' #'YOUR DISTRIBTUION NAME (I.E. PIP INSTALL DISTNAME)' Generally good to be same as packagename
 AUTHOR = 'Scott Coughlin'
 AUTHOR_EMAIL = 'scottcoughlin2014@u.northwestern.edu'
 LICENSE = 'GPLv3+'
