@@ -17,7 +17,7 @@
 # You should have received a copy of the GNU General Public License
 # along with pyblast.  If not, see <http://www.gnu.org/licenses/>
 
-"""COSMIC (Compact Object Synthesis and Monte Carlo Investigation Code)
+"""Python BLAST Tools.
 """
 
 from ._version import get_versions

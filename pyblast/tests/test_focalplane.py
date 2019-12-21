@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
-# Copyright (C) Scott Coughlin (2019)
+# Copyright (C) 2019-2020:
+#    Scott Coughlin
+#    Ted Kisner
 #
 # This file is part of pyblast.
 #
@@ -16,11 +18,32 @@
 # You should have received a copy of the GNU General Public License
 # along with pyblast.  If not, see <http://www.gnu.org/licenses/>.
 
-"""Unit test for pyblast.YOURMODULE classes
+"""Unit tests for focalplane tools
 """
+import os
+import unittest
 
-from pyblast.detector.mymodule import MyModule
+from pkg_resources import resource_filename
 
-class TestMyModule(object):
-    def test_myclass(self):
-        assert 1 == MyModule().return_one()
+from pyblast.focalplane import Focalplane, plot_focalplane
+
+
+class TestFocalplane(unittest.TestCase):
+
+    def setUp(self):
+        self._bolopath = resource_filename(
+            "pyblast.tests", os.path.join(
+                "data",
+                "fake_bolotable.tsv"
+            )
+        )
+
+    def tearDown(self):
+        pass
+
+    def test_load(self):
+        fp = Focalplane(self._bolopath)
+
+    def test_vis(self):
+        fp = Focalplane(self._bolopath)
+        plot_focalplane(fp, "focalplane.pdf")

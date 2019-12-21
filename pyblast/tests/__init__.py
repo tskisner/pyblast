@@ -1,6 +1,9 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# Copyright (C) Scott Coughlin (2019)
+# Copyright (C) 2019-2020:
+#    Katie Breivik
+#    Scott Coughlin
+#    Ted Kisner
 #
 # This file is part of pyblast
 #
@@ -16,3 +19,6 @@
 #
 # You should have received a copy of the GNU General Public License
 # along with pyblast.  If not, see <http://www.gnu.org/licenses/>
+
+"""Unit tests
+"""

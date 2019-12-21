@@ -23,9 +23,11 @@
 from __future__ import print_function
 
 import glob
-import os.path
+import os
+import shutil
 
 from setuptools import (setup, find_packages)
+from distutils.command.clean import clean
 
 cmdclass = {}
 
@@ -45,6 +47,34 @@ except ImportError:
 
 cmdclass["sdist"] = sdist
 """
+
+# -- cleaning up ---------------------------------------------------------------
+#
+# To ensure that we do not install stale build products, it is useful to
+# make "python setup.py clean" do a more rigorous purge of build files.
+
+class RealClean(clean):
+    def run(self):
+        super().run()
+        clean_files = [
+            "./build",
+            "./dist",
+            "./__pycache__",
+            "pyblast/__pycache__",
+            "pyblast/tests/__pycache__",
+            "./*.egg-info"
+        ]
+        for cf in clean_files:
+            # Make paths absolute and relative to this path
+            apaths = glob.glob(os.path.abspath(cf))
+            for path in apaths:
+                if os.path.isdir(path):
+                    shutil.rmtree(path)
+                elif os.path.isfile(path):
+                    os.remove(path)
+        return
+
+cmdclass['clean'] = RealClean
 
 # -- documentation ------------------------------------------------------------
 
@@ -109,8 +139,13 @@ packagenames = find_packages()
 # Executables go in a folder called bin
 scripts = glob.glob(os.path.join('bin', '*'))
 
+package_data = {
+    'pyblast': ['data/*'],
+    'pyblast.tests': ['tests/data/*']
+}
+
 PACKAGENAME = 'pyblast'
-DISTNAME = 'nublast' #'YOUR DISTRIBTUION NAME (I.E. PIP INSTALL DISTNAME)' Generally good to be same as packagename
+DISTNAME = 'pyblast' #'YOUR DISTRIBTUION NAME (I.E. PIP INSTALL DISTNAME)' Generally good to be same as packagename
 AUTHOR = 'Scott Coughlin'
 AUTHOR_EMAIL = 'scottcoughlin2014@u.northwestern.edu'
 LICENSE = 'GPLv3+'
@@ -128,7 +163,7 @@ setup(name=DISTNAME,
       author_email=AUTHOR_EMAIL,
       license=LICENSE,
       packages=packagenames,
-      include_package_data=True,
+      package_data=package_data,
       cmdclass=cmdclass,
       url=GITHUBURL,
       scripts=scripts,
@@ -137,7 +172,7 @@ setup(name=DISTNAME,
       tests_require=tests_require,
       extras_require=extras_require,
       python_requires='!=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*, <4',
-      use_2to3=True,
+      use_2to3=False,
       classifiers=[
           'Development Status :: 4 - Beta',
           'Programming Language :: Python',

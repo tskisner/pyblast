@@ -1,0 +1,17 @@
+##########################
+# BLAST-Pol "bolo table" 2012
+#
+# Most recent updates in each category:
+#   - to noise fit (WhiteNoise, 1/f, alpha):  SJB 18 Dec 2013
+#   - to pixel offsets (EL, XEL):             JAS 20 Oct 2013
+Chi_250	0
+Chi_350	0
+Chi_500	0
+#Name	N	C	Type	EL	XEL	Angle	pix	LR1	LR2	CRJ	BW	Resp.	S	WhiteNoise	1/f	Res.	Chi	p_eff	q_ip	u_ip	alpha	Old
+Begin:
+B2A01V	19	19	250	220.53129	354.39214	90	A01	8.72	8.72	0	0	1	0	4.0e-06	0.064	2.32	15.2	1	0.0047	0.0319	1.4547754	N5C19
+B2A02H	19	14	B250	0	0	0	A02	8.64	8.64	0	0	1	0	5.0e-05	0.165059	2.13	15.2	1	0	0	27	N5C14
+B2A03V	19	13	250	215.55817	243.80674	90	A03	8.6	8.64	0	0	1	0	4.0e-06	0.048	2.04	15.2	1	0.018	0.0192	1.6740562	N5C13
+B2A04H	19	08	250	214.12593	187.60805	0	A04	8.72	8.64	0	0	1	0	3.0e-06	0.052	1.92	15.2	1	-0.0046	-0.0288	1.528887	N5C8
+B2A05V	19	03	250	210.72849	132.23016	90	A05	8.59	8.56	0	0	1	0	4.0e-06	0.051	1.81	15.2	1	0.021	0.008	1.4233186	N5C3
+End:
